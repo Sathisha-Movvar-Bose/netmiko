@@ -47,7 +47,7 @@ class CiscoBaseConnection(BaseConnection):
         self,
         pri_prompt_terminator=r"#\s*$",
         alt_prompt_terminator=r">\s*$",
-        username_pattern=r"(?:user:|username|login)",
+        username_pattern=r"(?:[Uu]ser|username|[Ll]ogin)",
         pwd_pattern=r"assword",
         delay_factor=1,
         max_loops=20,
@@ -91,7 +91,7 @@ class CiscoBaseConnection(BaseConnection):
 
                 # Search for username pattern / send username
                 if re.search(username_pattern, output, flags=re.I):
-                    self.write_channel(self.username + self.TELNET_RETURN)
+                    self.write_channel(self.username + self.RETURN)
                     time.sleep(1 * delay_factor)
                     output = self.read_channel()
                     return_msg += output

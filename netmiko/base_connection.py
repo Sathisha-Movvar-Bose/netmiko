@@ -222,7 +222,7 @@ class BaseConnection(object):
         self.password = password
         self.secret = secret
         self.device_type = device_type
-        self.ansi_escape_codes = False
+        self.ansi_escape_codes = True
         self.verbose = verbose
         self.timeout = timeout
         self.auth_timeout = auth_timeout
