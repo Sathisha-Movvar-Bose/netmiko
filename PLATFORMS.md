@@ -29,16 +29,20 @@
 - Extreme MLX/NetIron (Brocade/Foundry)
 - HPE Comware7
 - Huawei
+- Huawei OLT
+- Huawei SmartAX
 - IP Infusion OcNOS
 - Juniper ScreenOS
 - Mellanox
 - MikroTik RouterOS
 - MikroTik SwitchOS
 - NetApp cDOT
+- Nokia/Alcatel SR OS
 - OneAccess
 - Palo Alto PAN-OS
 - Pluribus
 - Ruckus ICX/FastIron
+- Ruijie Networks
 - Ubiquiti EdgeSwitch
 - Vyatta VyOS
 
@@ -68,5 +72,7 @@
 - Nokia/Alcatel SR-OS
 - QuantaMesh
 - Rad ETX
+- Sophos SFOS
+- Ubiquiti Unifi Switch
 - Versa Networks FlexVNF
-
+- Watchguard Firebox
