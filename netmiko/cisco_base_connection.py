@@ -52,7 +52,7 @@ class CiscoBaseConnection(BaseConnection):
         delay_factor=1,
         max_loops=20,
     ):
-        self.write_channel(self.TELNET_RETURN)
+        self.write_channel(self.RETURN)
         output = self.read_channel()
         if re.search(pri_prompt_terminator, output, flags=re.M) or re.search(
             alt_prompt_terminator, output, flags=re.M
